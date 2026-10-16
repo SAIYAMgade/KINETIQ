@@ -35,6 +35,9 @@ COPY tests/ ./tests/
 # Copy built frontend assets from builder stage
 COPY --from=frontend-builder /app/frontend/dist ./frontend/dist
 
+# Copy data directory (raw datasets and starter documents)
+COPY data/ ./data/
+
 # Initialize directories for raw data, warehouse, and documents
 RUN mkdir -p data/raw data/quarantine data/warehouse data/documents
 
