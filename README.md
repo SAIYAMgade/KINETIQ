@@ -1,4 +1,4 @@
-# CommerceFlow: Enterprise Data Engineering & Analytics Platform
+# KINETIQ: Enterprise Data Engineering & Analytics Platform
 
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.14-black.svg?style=flat-square)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-black.svg?style=flat-square)](https://fastapi.tiangolo.com)
@@ -6,9 +6,9 @@
 [![React](https://img.shields.io/badge/React-19.0-black.svg?style=flat-square)](https://react.dev)
 [![License](https://img.shields.io/badge/License-MIT-black.svg?style=flat-square)](LICENSE)
 
-**CommerceFlow** is an original, production-grade data engineering platform built around real-world e-commerce data from the **Brazilian E-Commerce Public Dataset by Olist**.
+**KINETIQ** is an original, production-grade data engineering and analytics platform built around 100,000+ real-world transactions from the **Brazilian E-Commerce Public Dataset by Olist**.
 
-Designed for modern high-velocity e-commerce and quick-commerce operations, CommerceFlow solves a foundational engineering question:
+Designed for modern high-velocity e-commerce and quick-commerce operations, KINETIQ solves a foundational engineering question:
 > *"Can we transform messy, heterogeneous source data into trustworthy business insights, and can we prove that the resulting data is correct?"*
 
 ---
@@ -17,7 +17,7 @@ Designed for modern high-velocity e-commerce and quick-commerce operations, Comm
 
 In high-velocity commerce (such as quick commerce), data arrives from diverse systems: payment gateways, order management systems, warehouse logistics, and customer apps. A single corrupt record (e.g. negative prices, delivery recorded before purchase, or missing customer keys) can silently distort inventory, financial accounting, and executive KPIs.
 
-CommerceFlow eliminates silent data loss through strict, automated gatekeeping:
+KINETIQ eliminates silent data loss through strict, automated gatekeeping:
 1. **Traceable Ingestion:** Preserves raw data as received and fingerprints every source file with SHA-256 checksums.
 2. **Automated Quarantine:** Automatically intercepts corrupt rows and moves them to an isolated quarantine zone with documented failure reasons—never silently discarding or hiding errors.
 3. **Financial Reconciliation:** Reconciles order item sums and freight charges against payment transaction values to prevent double-counting.
@@ -28,7 +28,7 @@ CommerceFlow eliminates silent data loss through strict, automated gatekeeping:
 
 ## Technical Deep-Dive (For Senior Data Engineers)
 
-CommerceFlow implements a **Medallion Lakehouse Architecture** (Bronze → Silver → Gold) powered by DuckDB's vectorized columnar engine, SQLite ACID governance, FastAPI REST services, and a React 19 / TypeScript frontend.
+KINETIQ implements a **Medallion Lakehouse Architecture** (Bronze → Silver → Gold) powered by DuckDB's vectorized columnar engine, SQLite ACID governance, FastAPI REST services, and a React 19 / TypeScript frontend.
 
 ```
 [Raw Sources: Olist CSV / APIs]

@@ -1,7 +1,7 @@
-# CommerceFlow: Platform Architecture & Engineering Plan
+# KINETIQ: Platform Architecture & Engineering Plan
 
 ## 1. System Vision & Business Context
-**CommerceFlow** is an enterprise data engineering platform designed around real e-commerce operations. It demonstrates how raw, heterogeneous e-commerce data (orders, items, payments, customers, sellers, logistics) is ingested, validated, quarantined when defective, modeled into an analytical warehouse, tracked for data quality and provenance, and streamed via historical event replay.
+**KINETIQ** is an enterprise data engineering platform designed around real e-commerce operations. It demonstrates how raw, heterogeneous e-commerce data (orders, items, payments, customers, sellers, logistics) is ingested, validated, quarantined when defective, modeled into an analytical warehouse, tracked for data quality and provenance, and streamed via historical event replay.
 
 ## 2. Real Data Provenance & Source Strategy
 - **Primary Source**: Brazilian E-Commerce Public Dataset by Olist
